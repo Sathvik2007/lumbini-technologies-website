@@ -1,0 +1,77 @@
+/* Navbar.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 3%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: shadow for more definition */
+  transition: background 1.3s ease; /* Smooth transition on scroll */
+}
+
+.logo {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer; /* Hand cursor for logo */
+}
+
+.navbar {
+  display: flex;
+  margin-left: auto; /* Keeps original spacing intact by pushing nav items to the right */
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 95px; /* Adjusted margin */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer; /* Ensures hand cursor on hover */
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a.active {
+  color: #bdbcbc; /* Highlight active page */
+}
+
+.navbar a.active::before {
+  width: 100%;
+  background: yellow;
+}
+
+/* Optional: Add a sticky effect if you want the navbar to have a subtle effect when scrolling */
+.header.sticky {
+  background: rgba(0, 0, 0, 1); /* Darker background when scrolling */
+}
+
+.navbar a:hover {
+  transform: translateY(-3px); /* Adds subtle hover effect */
+}
+
+/* Optional: Smooth transitions for navbar items */
+.navbar a {
+  transition: all 0.3s ease-in-out;
+}
