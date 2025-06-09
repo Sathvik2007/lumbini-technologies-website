@@ -1,8 +1,21 @@
- {
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
-  ],
+{
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/SkillArc",
+      "destination": "/SkillArc/index.html"
+    },
+    {
+      "source": "/SkillArc/(.*)",
+      "destination": "/SkillArc/$1"
+    },
+    {
+      "source": "/Admin",
+      "destination": "/Admin/index.html"
+    },
+    {
+      "source": "/Admin/(.*)",
+      "destination": "/Admin/$1"
+    }
   ]
-} 
+}
