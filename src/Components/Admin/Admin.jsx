@@ -1,30 +1,23 @@
+// your Admin.jsx component (clean and simple version)
 import React from 'react';
 
-const SkillArc = () => {
+const Admin = () => {
   return (
-    <div style={{ 
-      width: '100vw', 
-      height: '100vh', 
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      zIndex: 1000,
-      backgroundColor: 'white'
-    }}>
-      <iframe
-        src="/SkillArc_main_web-main/index.html"
-        style={{
-          width: '100%',
-          height: '100%',
-          border: 'none',
-          position: 'absolute',
-          top: 0,
-          left: 0
-        }}
-        title="SkillArc"
-      />
-    </div>
+    <iframe
+      title="Admin"
+      src="/Admin/index.html"
+      style={{
+        width: '100vw',
+        height: '100vh',
+        border: 'none',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: 1000,
+        backgroundColor: 'white'
+      }}
+    />
   );
 };
 
-export default SkillArc; 
+export default Admin;
