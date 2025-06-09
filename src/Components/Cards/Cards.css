@@ -1,0 +1,73 @@
+.cards-section {
+  padding: 0 2rem 4rem;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin-top: -26rem;
+}
+
+.cards-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  min-height: 100px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Optional fade-in animation */
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.card:hover {
+transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  min-height: 100px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  flex-grow: 1;
+  min-height: 150px;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
