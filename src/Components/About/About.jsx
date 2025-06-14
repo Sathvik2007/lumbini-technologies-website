@@ -49,22 +49,22 @@ const About = () => {
     <div className="member-card">
       <img src={member1} alt="Team Member 1" />
       <h4>Yeshraj Maganti</h4>
-      <p>Role</p>
+      <p>CEO/CFO</p>
     </div>
     <div className="member-card">
       <img src={member2}  alt="Team Member 2" />
       <h4>Krishna Prabhu Maganti</h4>
-      <p>Role</p>
+      <p>CMO</p>
     </div>
     <div className="member-card">
       <img src={member3}  alt="Team Member 3" />
       <h4>Ravi Kumar Lanke</h4>
-      <p>Role</p>
+      <p>CTO</p>
     </div>
      <div className="member-card">
       <img src={member4}  alt="Team Member 4" />
       <h4>Jagadeesh Pilli</h4>
-      <p>Role</p>
+      <p>COO</p>
     </div>
   </div>
 </section>
