@@ -10,14 +10,16 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Cards from './Components/Cards/Cards';
-import About from './Components/About/about';
+import About from './Components/About/About';
 import ServicePage from './Components/ServicePage/ServicePage';
 import Contact from './Components/Contact/Contact';
-import Login from './Components/Login/login'; 
+import Login from './Components/Login/Login';
+import ScrollingTextBanner from './Components/ScrollingTextBanner/ScrollingTextBanner'; // Add this import
 
-// Home composed component
+// Home composed component with banner
 const Home = () => (
   <>
+    <ScrollingTextBanner /> {/* Add banner here */}
     <Hero />
     <Cards />
   </>
@@ -34,7 +36,7 @@ const AnimatedRoutes = () => {
         <Route path="/About" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/ServicePage" element={<PageWrapper><ServicePage /></PageWrapper>} />
         <Route path="/Contact" element={<PageWrapper><Contact /></PageWrapper>} />
-        <Route path="/Login" element={<PageWrapper><Login /></PageWrapper>} />  {/* New Login route */}
+        <Route path="/Login" element={<PageWrapper><Login /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

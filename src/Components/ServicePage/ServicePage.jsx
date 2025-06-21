@@ -41,7 +41,7 @@ const ServicePage = () => {
             key={index}
             className="service-card"
             variants={cardVariants}
-            transition={{ duration: 0.2, ease: 'easeOut' }}
+            transition={{ duration: 0., ease: 'easeOut' }}
           >
             {service}
           </motion.div>

@@ -1,3 +1,4 @@
+/* Desktop and Base Styles */
 .cards-section {
   padding: 0 2rem 4rem;
   background-color: transparent;
@@ -34,13 +35,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  /* Optional fade-in animation */
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
 }
 
 .card:hover {
-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.15);
 }
@@ -60,7 +60,7 @@ transform: translateY(-10px);
   min-height: 150px;
 }
 
-/* Fade-in keyframes */
+/* Fade-in Keyframes */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -69,5 +69,38 @@ transform: translateY(-10px);
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 🔽 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .cards-section {
+    padding: 0 1rem 2rem;
+    margin-top: -10rem;
+  }
+
+  .cards-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+    min-height: auto;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    min-height: auto;
   }
 }

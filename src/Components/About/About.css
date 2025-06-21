@@ -109,10 +109,17 @@
   font-size: 0.95rem;
 }
 
+.mission-statement {
+  margin-top: -17rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.6;
+}
 
 .testimonials {
   text-align: center;
-  margin-top: -10rem;
+  margin-top: 7rem;
   font-size: 1rem;
 }
 
@@ -167,4 +174,62 @@
   font-weight: bolder;
 }
 
-  
+/* ------------------ MOBILE VIEW ------------------ */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-intro {
+    margin-top: 5rem;
+  }
+
+  .about-intro h1 {
+    font-size: 2rem;
+  }
+
+  .about-intro p,
+  .director-info p,
+  .mission-statement {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .managing-director {
+    margin-bottom: 5rem;
+  }
+
+  .director-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .our-members {
+    margin-top: 2rem;
+  }
+
+  .member-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .member-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .mission-statement {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    font-size: 0.95rem;
+  }
+}

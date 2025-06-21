@@ -30,13 +30,13 @@ const About = () => {
 
       {/* Managing Director Section */}
       <section className="managing-director">
-        <h2>Our Managing Director</h2>
+        <h2>Our Chairman/ Managing Director</h2>
         <div className="director-card">
           <img src={chairmanImg} alt="Srinivas Chakravarthy Maganti" />
           <div className="director-info">
             <h3>Srinivas Chakravarthy Maganti</h3>
             <p>
-              "Our mission is to redefine digital experiences through creativity, innovation, and relentless quality. At Lumbini Technologies, we don't just build products—we build trust."
+          
             </p>
           </div>
         </div>
@@ -67,6 +67,12 @@ const About = () => {
       <p>COO</p>
     </div>
   </div>
+
+    {/* Mission Statement */}
+  <p className="mission-statement">
+    Our mission is to redefine digital experiences through creativity, innovation, and relentless quality.
+    At Lumbini Technologies, we don't just build products—we build trust.
+  </p>
 </section>
 
 
