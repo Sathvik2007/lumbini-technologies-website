@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 15vh;
+  padding-top: 1vh;
   min-height: 100vh;
   color: white;
   text-align: center;
@@ -40,7 +40,7 @@
   }
 
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .hero-text p {
@@ -49,7 +49,7 @@
 }
 
 /* ========= RESPONSIVE: MOBILE PHONES ========= */
-@media (max-width: 480px) {
+@media (max-width: 80px) {
   .Hero {
     flex-direction: column;
     align-items: center;
@@ -57,15 +57,15 @@
   }
 
   .hero-text {
-    margin-top: 40px;
-    padding: 0 10px;
+    margin-top: 20px;
+    padding: 0 0px;
   }
 
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: 0.3rem;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.3rem;
   }
 }

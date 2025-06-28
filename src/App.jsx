@@ -15,6 +15,7 @@ import ServicePage from './Components/ServicePage/ServicePage';
 import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
 import ScrollingTextBanner from './Components/ScrollingTextBanner/ScrollingTextBanner'; // Add this import
+import Products from './Components/Products/Products';
 
 // Home composed component with banner
 const Home = () => (
@@ -35,6 +36,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/About" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/ServicePage" element={<PageWrapper><ServicePage /></PageWrapper>} />
+        <Route path="/Products" element={<PageWrapper><Products /></PageWrapper>} />
         <Route path="/Contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/Login" element={<PageWrapper><Login /></PageWrapper>} />
       </Routes>
@@ -55,6 +57,7 @@ const PageWrapper = ({ children }) => (
   </motion.div>
 );
 
+// Main App Component
 const App = () => {
   return (
     <Router>
@@ -62,6 +65,6 @@ const App = () => {
       <AnimatedRoutes />
     </Router>
   );
-};
+}
 
 export default App;
