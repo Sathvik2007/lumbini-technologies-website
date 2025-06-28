@@ -1,5 +1,5 @@
 import React from 'react';
-import './about.css';
+import './About.css';
 import { motion } from 'framer-motion';
 import chairmanImg from '../../assets/chairman.jpeg';
 import nighaLogo from '../../assets/nighalogo.jpg';
