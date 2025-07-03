@@ -89,7 +89,7 @@
   .cards-section {
     padding: 0 1rem 2rem; /* Reduce padding on sides for mobile */
     /* Adjust margin-top for mobile. It's crucial for layout stability. */
-    margin-top: -27rem;
+    margin-top: -37rem;
   }
 
   .cards-heading {
@@ -126,5 +126,11 @@
   .cards-container {
     grid-template-columns: 10fr; /* Force single column on very small screens */
     padding: 0 10px; /* Add slight horizontal padding if needed */
+  }
+
+  .cards-section {
+    padding: 0 1rem 2rem; /* Reduce padding on sides for mobile */
+    /* Adjust margin-top for mobile. It's crucial for layout stability. */
+    margin-top: -270rem;
   }
 }
